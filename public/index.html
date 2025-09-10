@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nath IT Solutions — Empowering Collaboration</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>window.BASE_API = '';</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="/"><img src="assets/logo.svg" alt="Nath IT" class="logo-img"/></a>
+        <span class="brand-text">Nath IT</span>
+      </div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/how.html">How It Works</a>
+        <a id="loginBtn" class="btn-link">Login / Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Empowering Open Collaboration. Driving AI‑Powered Innovation.</h1>
+          <p class="lead">Nath IT Solutions Pvt. Ltd. is a community‑driven platform where anyone can register, start projects, contribute to ongoing ones, and grow their skills while sharing success.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#" id="startProject">Register Your Project</a>
+            <a class="btn ghost" href="#" id="joinProject">Join a Project</a>
+          </div>
+          <div class="trust">
+            <span>✅ 100+ Projects</span>
+            <span>✅ 500+ Contributors</span>
+            <span>✅ AI‑Driven Tools</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-inner">
+            <h3>Start or Join Projects</h3>
+            <p>Post your idea, set rewards, and bring a team together — or contribute your skills and grow.</p>
+            <div class="mini-features">
+              <div>🎖️ Badges & Certificates</div>
+              <div>🤝 Team Collaboration</div>
+              <div>💡 AI Tools</div>
+            </div>
+            <a class="btn primary block" href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature-card">
+        <h3>🚀 Start Your Project</h3>
+        <p>Post your idea, set rewards, and bring a team together.</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>🤝 Join Ongoing Projects</h3>
+        <p>Contribute your skills, learn, and grow with real experience.</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>💡 AI‑Driven Solutions</h3>
+        <p>Web, app development, automation, workflows, content creation, and more.</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>🎖️ Earn Recognition</h3>
+        <p>Get participation certificates, skill badges, and revenue sharing.</p>
+      </article>
+      
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Nath IT Solutions Pvt. Ltd.</h4>
+        <p>Building a future of work where collaboration &gt; competition.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/about.html">About</a>
+        <a href="/how.html">How It Works</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div id="authModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div class="auth-forms">
+        <div class="tabs">
+          <button class="tab active" data-target="loginForm">Login</button>
+          <button class="tab" data-target="signupForm">Signup</button>
+        </div>
+
+        <form id="loginForm" class="form active">
+          <h3>Login</h3>
+          <input name="email" placeholder="Email" required type="email"/>
+          <input name="password" placeholder="Password" required type="password"/>
+          <button class="btn primary" type="submit">Login</button>
+        </form>
+
+        <form id="signupForm" class="form">
+          <h3>Signup</h3>
+          <input name="username" placeholder="Username" required />
+          <input name="email" placeholder="Email" required type="email"/>
+          <input name="password" placeholder="Password" required type="password"/>
+          <div class="row">
+            <input name="age" placeholder="Age" type="number"/>
+            
+          </div>
+          <button class="btn primary" type="submit">Create Account</button>
+        </form>
+      </div>
+      <div id="authMsg" class="auth-msg"></div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Nath IT Solutions</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="/"><img src="assets/logo.svg" alt="Nath IT" class="logo-img"/></a>
+        <span class="brand-text">Nath IT</span>
+      </div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/how.html">How It Works</a>
+        <a id="loginBtn2" class="btn-link">Login / Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>About Us</h2>
+
+    <section>
+      <h3>Mission</h3>
+      <p>To create an open, collaborative ecosystem where individuals and businesses can launch projects, collaborate with passionate contributors, and grow through AI-driven solutions.</p>
+    </section>
+
+    <section>
+      <h3>Vision</h3>
+      <p>Building a future of work where collaboration &gt; competition, powered by transparency, recognition, and innovation.</p>
+    </section>
+
+    <section>
+      <h3>Who We Are</h3>
+      <p>Nath IT Solutions Pvt. Ltd. is a Software-as-a-Service (SaaS) company focused on open project contribution, AI-powered digital solutions, and skill-building opportunities for all contributors.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Nath IT Solutions Pvt. Ltd.</h4>
+        <p>Building a future of work where collaboration &gt; competition.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/how.html">How It Works</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="authModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeModal2">&times;</button>
+      <!-- Reuse same forms as index -->
+      <div class="auth-forms">
+        <div class="tabs">
+          <button class="tab active" data-target="loginForm">Login</button>
+          <button class="tab" data-target="signupForm">Signup</button>
+        </div>
+        <form id="loginForm" class="form active">
+          <h3>Login</h3>
+          <input name="email" placeholder="Email" required type="email"/>
+          <input name="password" placeholder="Password" required type="password"/>
+          <button class="btn primary" type="submit">Login</button>
+        </form>
+        <form id="signupForm" class="form">
+          <h3>Signup</h3>
+          <input name="username" placeholder="Username" required />
+          <input name="email" placeholder="Email" required type="email"/>
+          <input name="password" placeholder="Password" required type="password"/>
+          <div class="row">
+            <input name="age" placeholder="Age" type="number"/>
+            <input name="weight" placeholder="Weight (kg)" type="number"/>
+          </div>
+          <button class="btn primary" type="submit">Create Account</button>
+        </form>
+      </div>
+      <div id="authMsg" class="auth-msg"></div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

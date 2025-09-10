@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How It Works — Nath IT Solutions</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="/"><img src="assets/logo.svg" alt="Nath IT" class="logo-img"/></a>
+        <span class="brand-text">Nath IT</span>
+      </div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/how.html">How It Works</a>
+        <a id="loginBtn3" class="btn-link">Login / Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>How It Works</h2>
+
+    <ol class="steps">
+      <li>
+        <h4>Step 1 — Register / Login</h4>
+        <p>Create your account and set up your profile.</p>
+      </li>
+      <li>
+        <h4>Step 2 — Choose Your Path</h4>
+        <p>Post a new project (with description, skills required, and payment/revenue model) or join an existing project as a contributor.</p>
+      </li>
+      <li>
+        <h4>Step 3 — Collaborate</h4>
+        <p>Work in teams of 4–5 members, supported by our community tools.</p>
+      </li>
+      <li>
+        <h4>Step 4 — Grow Together</h4>
+        <p>Project creators pay/share revenue as promised. Contributors earn certificates, badges, and real-world experience.</p>
+      </li>
+    </ol>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Nath IT Solutions Pvt. Ltd.</h4>
+      </div>
+      <div class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="authModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeModal3">&times;</button>
+      <!-- Reuse same forms as index -->
+      <div class="auth-forms">
+        <div class="tabs">
+          <button class="tab active" data-target="loginForm">Login</button>
+          <button class="tab" data-target="signupForm">Signup</button>
+        </div>
+        <form id="loginForm" class="form active">
+          <h3>Login</h3>
+          <input name="email" placeholder="Email" required type="email"/>
+          <input name="password" placeholder="Password" required type="password"/>
+          <button class="btn primary" type="submit">Login</button>
+        </form>
+        <form id="signupForm" class="form">
+          <h3>Signup</h3>
+          <input name="username" placeholder="Username" required />
+          <input name="email" placeholder="Email" required type="email"/>
+          <input name="password" placeholder="Password" required type="password"/>
+          <div class="row">
+            <input name="age" placeholder="Age" type="number"/>
+            <input name="weight" placeholder="Weight (kg)" type="number"/>
+          </div>
+          <button class="btn primary" type="submit">Create Account</button>
+        </form>
+      </div>
+      <div id="authMsg" class="auth-msg"></div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
